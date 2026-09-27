@@ -1,4 +1,6 @@
 from utils import calculate_sum
+from auth import validate_user
 
 if __name__ == "__main__":
-    print(f"The sum is: {calculate_sum(10, 20)}")
+    if validate_user("admin"):
+        print(f"The sum is: {calculate_sum(10, 20)}")
