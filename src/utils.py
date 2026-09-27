@@ -1,3 +1,3 @@
 def calculate_sum(a, b):
-    # Basic addition
-    return a + b
+    # Optimized using sum()
+    return sum([a, b])

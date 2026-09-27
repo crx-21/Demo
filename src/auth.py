@@ -1,5 +1,4 @@
+import re
 def validate_user(username):
-    # Basic check
-    if username:
-        return True
-    return False
+    # New regex-based email validation
+    return bool(re.match(r"[^@]+@[^@]+\.[^@]+", username))
